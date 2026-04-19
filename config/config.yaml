@@ -1,0 +1,26 @@
+paths:
+  constituents_month_end: data/raw/constituents_month_end.csv
+  prices_daily: data/raw/prices_daily.csv
+  output_dir: output
+
+columns:
+  date: date
+  id: permno
+  in_index: in_index
+  price: prc
+  ret: ret
+
+pipeline:
+  train_days: 750
+  trade_days: 250
+  sequence_length: 240
+  min_history_days: 240
+  start_date: 1990-01-01
+  end_date: 2015-10-31
+  save_period_samples: true
+
+cleaning:
+  drop_non_positive_prices: false
+  winsorize_returns: false
+  winsorize_lower: 0.001
+  winsorize_upper: 0.999
