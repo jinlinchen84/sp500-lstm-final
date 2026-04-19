@@ -81,6 +81,3 @@ PYTHONPATH=src python scripts/run_pipeline.py \
 - `train_samples_period_XX.parquet`：某期训练样本
 - `trade_samples_period_XX.parquet`：某期交易样本
 
-- month-end constituent snapshots are later shifted forward to represent membership in the subsequent month
-- all-ever-constituents extraction avoids survivorship bias
-- downstream standardization must be estimated from the training window only
