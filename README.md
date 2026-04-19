@@ -50,7 +50,7 @@ repro_lstm_pipeline/
 - 标签为 **t+1日收益率是否高于当日横截面中位数（0/1变量）**
 - 标准化参数（均值、标准差）
 
-## run
+## 运行
 
 ### WRDS raw data download
 ```bash
