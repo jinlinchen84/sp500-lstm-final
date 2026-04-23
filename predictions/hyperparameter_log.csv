@@ -1,5 +1,5 @@
 Model,Architecture,Optimizer,Input Features,Early Stopping,Mean Accuracy
-LSTM,LSTM(25 units) + Dropout(0.16) + Softmax,RMSprop,240-step standardized return sequence,"patience=10, epoch=52 (Period 1)",0.5150
+LSTM,LSTM(25 units) + Dropout(0.16) + Softmax,RMSprop,240-step standardized return sequence,"patience=10, epoch=41 (Period 1)",0.5150
 LOG,"L2 regularization, LBFGS solver",LBFGS,31 multi-period cumulative returns,N/A,0.5115
 RAF,"1000 trees, max_depth=20",N/A,31 multi-period cumulative returns,N/A,0.5124
 DNN,FC(31→31→10→5→2) + Dropout(0.5),Adam,31 multi-period cumulative returns,patience=10,0.5111
