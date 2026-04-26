@@ -1,12 +1,30 @@
-__pycache__/
-*.pyc
-.DS_Store
+# IDE / system
 .vscode/
 .idea/
+.DS_Store
 
-data/raw/
-data/processed/
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
 
+# Large raw / intermediate data
+data/
+output/
+predictions_daily/
+
+# Large model / prediction files
 *.parquet
 *.zip
-*.csv
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.h5
+
+# Environment / secrets
+.env
+.env.local
+*.key
+credentials*.json
+s3_credentials.json
